@@ -7,8 +7,8 @@ character = {}
 
 
 def lock_character():
-    pyautogui.click(900, 846)
-    pyautogui.click(960, 846)
+    pyautogui.click(950, 808)
+    pyautogui.click(950, 808)
 
 
 def wait_for_keyboard_press():
@@ -24,43 +24,50 @@ def read_config():
     config = configparser.ConfigParser()
     configfilepath = 'config.ini'
     config.read(configfilepath)
-    for i in range(12):
+    for i in range(15):
         character[str(i)] = config.get('main', str(i + 1))
         #print(character)
 
-    for i in character:
+
+for i in character:
         if character[str(i)] == "1":
-            character[str(i)] = "Brimstone"
+            character[str(i)] = "Astra"
         if character[str(i)] == "2":
-            character[str(i)] = "Cypher"
-        if character[str(i)] == "3":
-            character[str(i)] = "Jett"
-        if character[str(i)] == "4":
-            character[str(i)] = "Omen"
-        if character[str(i)] == "5":
-            character[str(i)] = "Pheonix"
-        if character[str(i)] == "6":
-            character[str(i)] = "Sage"
-        if character[str(i)] == "7":
-            character[str(i)] = "Sova"
-        if character[str(i)] == "8":
             character[str(i)] = "Breach"
-        if character[str(i)] == "9":
+        if character[str(i)] == "3":
+            character[str(i)] = "Brimstone"
+        if character[str(i)] == "4":
+            character[str(i)] = "Cypher"
+        if character[str(i)] == "5":
+            character[str(i)] = "Jett"
+        if character[str(i)] == "6":
             character[str(i)] = "Killjoy"
-        if character[str(i)] == "10":
+        if character[str(i)] == "7":
+            character[str(i)] = "Omen"
+        if character[str(i)] == "8":
+            character[str(i)] = "Phoenix"
+        if character[str(i)] == "9":
             character[str(i)] = "Raze"
-        if character[str(i)] == "11":
+        if character[str(i)] == "10":
             character[str(i)] = "Reyna"
+        if character[str(i)] == "11":
+            character[str(i)] = "Sage"
         if character[str(i)] == "12":
+            character[str(i)] = "Skye"
+        if character[str(i)] == "13":
+            character[str(i)] = "Sova"
+        if character[str(i)] == "14":
             character[str(i)] = "Viper"
-    print("Converting done!")
+        if character[str(i)] == "15":
+            character[str(i)] = "Yoru"
+        print("Converting done!")
 
     return character
 
 
 def choose_0():
     wait_for_keyboard_press()
-    pyautogui.click(454, 960)
+    pyautogui.click(669,898)
     time.sleep(0.2)
     lock_character()
     print("Character chosen!")
@@ -68,7 +75,7 @@ def choose_0():
 
 def choose_1():
     wait_for_keyboard_press()
-    pyautogui.click(540, 960)
+    pyautogui.click(739,915)
     time.sleep(0.2)
     lock_character()
     print("Character chosen!")
@@ -76,7 +83,7 @@ def choose_1():
 
 def choose_2():
     wait_for_keyboard_press()
-    pyautogui.click(628, 960)
+    pyautogui.click(842,913)
     time.sleep(0.2)
     lock_character()
     print("Character chosen!")
@@ -84,7 +91,7 @@ def choose_2():
 
 def choose_3():
     wait_for_keyboard_press()
-    pyautogui.click(720, 960)
+    pyautogui.click(927,915)
     time.sleep(0.2)
     lock_character()
     print("Character chosen!")
@@ -92,7 +99,7 @@ def choose_3():
 
 def choose_4():
     wait_for_keyboard_press()
-    pyautogui.click(813, 960)
+    pyautogui.click(1005,921)
     time.sleep(0.2)
     lock_character()
     print("Character chosen!")
@@ -100,7 +107,7 @@ def choose_4():
 
 def choose_5():
     wait_for_keyboard_press()
-    pyautogui.click(921, 960)
+    pyautogui.click(1091,921)
     time.sleep(0.2)
     lock_character()
     print("Character chosen!")
@@ -108,7 +115,7 @@ def choose_5():
 
 def choose_6():
     wait_for_keyboard_press()
-    pyautogui.click(998, 960)
+    pyautogui.click(1157,920)
     time.sleep(0.2)
     lock_character()
     print("Character chosen!")
@@ -116,7 +123,7 @@ def choose_6():
 
 def choose_7():
     wait_for_keyboard_press()
-    pyautogui.click(1099, 960)
+    pyautogui.click(1247,917)
     time.sleep(0.2)
     lock_character()
     print("Character chosen!")
@@ -124,7 +131,7 @@ def choose_7():
 
 def choose_8():
     wait_for_keyboard_press()
-    pyautogui.click(1200, 960)
+    pyautogui.click(693,1005)
     time.sleep(0.2)
     lock_character()
     print("Character chosen!")
@@ -132,7 +139,7 @@ def choose_8():
 
 def choose_9():
     wait_for_keyboard_press()
-    pyautogui.click(1281, 960)
+    pyautogui.click(775,1005)
     time.sleep(0.2)
     lock_character()
     print("Character chosen!")
@@ -140,7 +147,7 @@ def choose_9():
 
 def choose_10():
     wait_for_keyboard_press()
-    pyautogui.click(1373, 960)
+    pyautogui.click(841,1005)
     time.sleep(0.2)
     lock_character()
     print("Character chosen!")
@@ -148,11 +155,31 @@ def choose_10():
 
 def choose_11():
     wait_for_keyboard_press()
-    pyautogui.click(1460, 960)
+    pyautogui.click(896,1008)
     time.sleep(0.2)
     lock_character()
     print("Character chosen!")
 
+def choose_12():
+    wait_for_keyboard_press()
+    pyautogui.click(997,1011)
+    time.sleep(0.2)
+    lock_character()
+    print("Character chosen!")
+
+def choose_13():
+    wait_for_keyboard_press()
+    pyautogui.click(1102,1002)
+    time.sleep(0.2)
+    lock_character()
+    print("Character chosen!")    
+
+def choose_14():
+    wait_for_keyboard_press()
+    pyautogui.click(1166,1006)
+    time.sleep(0.2)
+    lock_character()
+    print("Character chosen!")
 
 def insta_lock_character(character):
     config = configparser.ConfigParser()
@@ -185,7 +212,12 @@ def insta_lock_character(character):
         choose_10()
     if characterstr == "12":
         choose_11()
-
+    if characterstr == "13":
+        choose_12()    
+    if characterstr == "14":
+        choose_13()
+    if characterstr == "15":
+        choose_14()    
 
 def main():
     while True:

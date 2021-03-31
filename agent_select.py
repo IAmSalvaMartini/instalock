@@ -13,29 +13,35 @@ def read_config():
 
     for i in character:
         if character[str(i)] == "1":
-            character[str(i)] = "Brimstone"
+            character[str(i)] = "Astra"
         if character[str(i)] == "2":
-            character[str(i)] = "Cypher"
-        if character[str(i)] == "3":
-            character[str(i)] = "Jett"
-        if character[str(i)] == "4":
-            character[str(i)] = "Omen"
-        if character[str(i)] == "5":
-            character[str(i)] = "Pheonix"
-        if character[str(i)] == "6":
-            character[str(i)] = "Sage"
-        if character[str(i)] == "7":
-            character[str(i)] = "Sova"
-        if character[str(i)] == "8":
             character[str(i)] = "Breach"
-        if character[str(i)] == "9":
+        if character[str(i)] == "3":
+            character[str(i)] = "Brimstone"
+        if character[str(i)] == "4":
+            character[str(i)] = "Cypher"
+        if character[str(i)] == "5":
+            character[str(i)] = "Jett"
+        if character[str(i)] == "6":
             character[str(i)] = "Killjoy"
-        if character[str(i)] == "10":
+        if character[str(i)] == "7":
+            character[str(i)] = "Omen"
+        if character[str(i)] == "8":
+            character[str(i)] = "Phoenix"
+        if character[str(i)] == "9":
             character[str(i)] = "Raze"
-        if character[str(i)] == "11":
+        if character[str(i)] == "10":
             character[str(i)] = "Reyna"
+        if character[str(i)] == "11":
+            character[str(i)] = "Sage"
         if character[str(i)] == "12":
+            character[str(i)] = "Skye"
+        if character[str(i)] == "13":
+            character[str(i)] = "Sova"
+        if character[str(i)] == "14":
             character[str(i)] = "Viper"
+        if character[str(i)] == "15":
+            character[str(i)] = "Yoru"
     print("Converting done!")
 
     return character
