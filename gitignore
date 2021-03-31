@@ -1,0 +1,6 @@
+_pycache_/
+build/
+dist/
+__init__.spec
+instalocker.spec
+setup.spec
