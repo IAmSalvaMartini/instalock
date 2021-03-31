@@ -7,9 +7,9 @@ character = {}
 def read_config():
     configfilepath = 'config.ini'
     config1.read(configfilepath)
-    for i in range(12):
+    for i in range(15):
         character[str(i)] = config1.get('main', str(i + 1))
-        #print(character)
+        print(character)
 
     for i in character:
         if character[str(i)] == "1":
